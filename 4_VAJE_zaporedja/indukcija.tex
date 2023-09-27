@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+
+\title{Indukcija vaje}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\begin{example}
+    Dokaži
+    \begin{align*}
+    &\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}\\
+    &\frac{1}{1\cdot 2}+\frac{1}{2\cdot 3}+\ldots+\frac{1}{n(n+1)}=\frac{n}{n+1}
+    \end{align*}
+\end{example}
+
+\begin{example}
+    Dokaži
+    \begin{align*}
+    &3|(n^3+2n)\forall n\in\mathbb{N}\\
+    &6|(17n^3+103n)\\
+    \end{align*}
+\end{example}
+
+\begin{example}
+    DN: Dokaži
+    \begin{align*}
+    &1^3+2^3+3^3+\ldots +n^3=\frac{1}{4}n^2(n+1)^2\\
+    &7|(5^{2n+1}+2^{2n+1})
+    \end{align*}
+\end{example}
+
+
+\end{document}
