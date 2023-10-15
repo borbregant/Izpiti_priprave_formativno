@@ -5,9 +5,9 @@
 %==========================================================================
 %               Sem vpisi podatke o izpitu
 %==========================================================================
-\FRACTIONSIMPLIFY{31}{1}{\skupnotock}{\nepomembno}%Sem vpiši (v polje trenutno {60}) skupno število točk, da paket naračuna kriterij ocenjevanj
+\FRACTIONSIMPLIFY{26}{1}{\skupnotock}{\nepomembno}%Sem vpiši (v polje trenutno {60}) skupno število točk, da paket naračuna kriterij ocenjevanj
 \izpit[ucilnica = RAZRED, naloge = 6]%ucilnica RAZRED, lahko se sedezni red, ime in priimek, maturitetni
-{Matematika - Geometrija}{22. 9. 2023}{Čas pisanja je 45 minut.\\ Možno je doseči $\skupnotock$ točk.\\ Veliko uspeha!}
+{Matematika - Geometrija, trigonometrija}{19. 10. 2023}{Čas pisanja je 45 minut.\\ Možno je doseči $\skupnotock$ točk.\\ Veliko uspeha!}
 %==========================================================================
 %               Nepomembno - Preskoči
 %==========================================================================
@@ -19,13 +19,13 @@
 \ADD{\dobro}{\tempepsilon}{\dobroplus}
 \ADD{\pravdobro}{\tempepsilon}{\pravdobroplus}
 \ADD{\odlicno}{\tempepsilon}{\odlicnoplus}
-\ROUND[0]{\dobroplus}{\dobroplus}
-\ROUND[0]{\pravdobroplus}{\pravdobroplus}
-\ROUND[0]{\odlicnoplus}{\odlicnoplus}
-\ROUND[0]{\zadostno}{\zadostno}
-\ROUND[0]{\dobro}{\dobro}
-\ROUND[0]{\pravdobro}{\pravdobro}
-\ROUND[0]{\odlicno}{\odlicno}\begin{small}
+\ROUND[1]{\dobroplus}{\dobroplus}
+\ROUND[1]{\pravdobroplus}{\pravdobroplus}
+\ROUND[1]{\odlicnoplus}{\odlicnoplus}
+\ROUND[1]{\zadostno}{\zadostno}
+\ROUND[1]{\dobro}{\dobro}
+\ROUND[1]{\pravdobro}{\pravdobro}
+\ROUND[1]{\odlicno}{\odlicno}\begin{small}
  \PlaceText{100mm}{33mm}{\begin{tabular}{ll}
     \multicolumn{2}{c}{\textbf{Kriterij ocenjevanja}} \\[0.5ex]
     Ocena & Tocke \\ \hline
@@ -52,20 +52,25 @@
 
   
 \naloga[5]
-  V trapezu $ABCD$ sta kota $\angle ADC$ in $\angle ACB$ enaka. Izračunaj dolžino diagonale $e$, če sta osnovnici dolgi $a=9cm$ in $c=4cm$.
+  Glede na sliko izračunaj $x$ in $y$.
+  \begin{figure}[H]
+    \includegraphics[width=1\textwidth]{naloga_podobnost.pdf}
+    \centering
+\end{figure}
   \prostor[2]
 
 \naloga*[4]
   Število diagonal v nekem pravilnem večkotniku je za 25 večje od števila stranic. Izračunaj, koliko meri notranji kot tega večkotnika.
-  \prostor[1]
+  \prostor[1.5]
 
 
 \naloga[\tocke{4}]
   V pravokotnem trikotniku merita pravokotni projekciji katet na hipotenuzo $18cm$ in $32cm$. Izračunaj, koliko merijo stranice tega trikotnika in koliko meri višina.
   \prostor[1]
 
-\naloga*[\tocke{4}]
-  Poenostavi $\left(1-\cos^2 x\right)(1+\cot^2 x)$.
+\naloga*[\tocke{3}]
+  %Poenostavi $\left(1-\cos^2 x\right)(1+\cot^2 x)$.
+  Koliko stran od drevesa, visokega $35m$, se moramo postaviti, da ga vidimo pod kotom $30^\circ$?
   \prostor[1]
 
 
