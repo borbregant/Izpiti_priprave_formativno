@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+
+\title{Verjetnost vaje}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\section{Osnovni nivo}
+
+\begin{example}
+    Verjetnost, da je v vseh permutacijah besede SLOVENIJA pojavi beseda LOVE
+\end{example}
+
+\begin{example}
+    Iz števk 1, 2, 3 sestavljamo 6-mestna števila. Koliko je vseh možnosti. Kolikšna je verjetnost, da bo imelo število števko 1 natanko enkrat in števko 2 vsaj trikrat. \textcolor{gray}{pogledamo koliko je možnosti za 3, 4, 5 dvojk in to seštejemo.}
+\end{example}
+
+\begin{example}
+    Števke 1, 2, 3, 4, 5, 6 in sestavljamo 4-mestna števila. Kolikšna je verjetnost, da bo izbrano število deljivo s 5.
+\end{example}
+
+\begin{example}
+    V zaboju 120 žarnic in $20\%$ pregorenih. Kolikšna je verjetnost, da če jih 5 potegnemo ven, da bodo vsaj 4 gorele.
+\end{example}
+
+\begin{example}
+    7 jih gre v kino v isto vrsto. Kolikošna je verjetnost, da bosta dve sedeli skupaj. \textcolor{gray}{lahko se tudi zamenjata torej $\cdot 2$}
+\end{example}
+
+\begin{example}
+    8 belih, 12 črnih kroglic. Kolikšna verjetnost, da izvlečemo 2 beli in 2 črni.
+\end{example}
+
+\begin{example}
+    Višji nivo:  5 naključno izbranih ljudi vprašamo, kdaj imamo rojstni dan. Kolikšna je verjetnost, da ga imajo na različne dneve tedna. \textcolor{gray}{$P(A)=\frac{7\cdot \ldots \cdot 3}{7^5}$}
+\end{example}
+
+\begin{example}
+    Kolikšna je verjetnost, da je produkt dveh pik na kockah manjši od 6. \textcolor{gray}{Vzorčni prostor}
+\end{example}
+
+\begin{example}
+    10 črnih, 8 belih. Verjetnost za CC, CC, CB, CB z vračanjem ali brez
+\end{example}
+
+\begin{example}
+    Kolikšna je verjetnost, da v kompletu 32 kart dobi en igralec vse štiri ase, če si razdelijo po 8 kart.
+\end{example}
+
+\end{document}
