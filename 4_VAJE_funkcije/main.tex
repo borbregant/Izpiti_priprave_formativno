@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+
+\title{Funkcije vaje}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\section{Osnovni nivo}
+
+\begin{example}
+    Zapiši definici
+\end{example}
+
+\section{Višji nivo}
+
+\begin{example}
+    Za funkcijo $f(x)=\frac{x}{1-x}$ ugani predpis za $(f\circ f \circ \ldots \circ f)(x)$ in ga z indukcijo dokaži
+\end{example}
+
+\begin{example}
+    Določi definicijsko območje in inverzno funkcijo za $f(x)=\ln \frac{2x-1}{x+2}$.
+\end{example}
+
+
+\end{document}
