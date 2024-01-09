@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+
+\title{Vektorji in racionalni eksponenti}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\begin{example}
+    V pravilnem šestkotniku $ABCDEF$ je točka $X$ razpolovišče daljice $AB$, točka $Y$ pa deli stranico $EF$ v razmerju $|EY|: |YF|=3:4$. V kakšnem razmerju deli premica $AD$ daljico  $XY$.
+\end{example}
+
+\begin{example}
+    Za katero vrednost $m$ so vektorji $\vec{a}=(4,-2,-1), \vec{b}=(-1,3,m-2)$ in $\vec{c}=(2,4,-11)$ koplanarni?
+\end{example}
+
+\begin{example}
+    Zapiši komponente vektorja $\vec{a}=\vec{XY}$, kjer je $X=(-2,4,1)$ in $Y=(3,4,-5)$. Določi še kot med $\vec{r_X}$ in $\vec{r_Y}$.
+\end{example}
+
+\begin{example}
+    Dolžina vektorja $\vec{a}+\vec{b}$ je 1, dolžina vektorja $\vec{b}$ je 2, kot med vektorjema $\vec{a}$ in $\vec{b}$ pa $\varphi = 45^\circ$. Natančno izračunaj dolžino vektorja $\vec{a}-\vec{b}$
+\end{example}
+
+\begin{example}
+    Trikotniku z oglišči $A(-6,-8,-1)$, $B(-4,1,1)$ in $C(2,-5,-4)$ določi težišče $T$, dolžine stranic in kot $\gamma$.
+\end{example}
+
+\begin{example}
+    Poenostavi
+    \[\frac{\sqrt[3]{a^2 \sqrt[3]{a}}(a^3 +b^3 )^0}{(\sqrt{a}\cdot b^{-2})^{-\frac{2}{3}}}\]
+\end{example}
+
+\begin{example}
+    Reši enačbo
+    \[\sqrt{4x-3}=1+\sqrt{2x-2}.\]
+\end{example}
+
+\end{document}
