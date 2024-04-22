@@ -4,10 +4,10 @@
 
 %==========================================================================
 %               Sem vpisi podatke o izpitu
-%==========================================================================
-\FRACTIONSIMPLIFY{25}{1}{\skupnotock}{\nepomembno}%Sem vpiši (v polje trenutno {60}) skupno število točk, da paket naračuna kriterij ocenjevanj
-\izpit[ucilnica = RAZRED, naloge = 6]%ucilnica RAZRED, lahko se sedezni red, ime in priimek, maturitetni
-{Geometrija, trigonometrija}{19. 10. 2023}{Čas pisanja je 45 minut.\\ Možno je doseči $\skupnotock$ točk.\\ Veliko uspeha!}
+%=========================================================================
+\FRACTIONSIMPLIFY{24}{1}{\skupnotock}{\nepomembno}%Sem vpiši (v polje trenutno {60}) skupno število točk, da paket naračuna kriterij ocenjevanj
+\izpit[ucilnica = RAZRED, naloge = 3]%ucilnica RAZRED, lahko se sedezni red, ime in priimek, maturitetni
+{Eksponentna in logaritemska funkcija}{19. 10. 2023}{Čas pisanja je 45 minut.\\ Možno je doseči $\skupnotock$ točk.\\ Veliko uspeha!}
 %==========================================================================
 %               Nepomembno - Preskoči
 %==========================================================================
@@ -41,31 +41,28 @@
 %   oz. za kompleksno ravnino \dodatek\input{kompleksnaravnina}
 %==========================================================================
 
-\naloga[\tocke{4}]
-  Funkciji $f(x)=\log_2{\left(x+2\right)}-1$ določi inverzno funkcijo. Funkciji $f$ določi (lahko računsko ali pa grafično) $D_f$, funkcijo $f^{-1}$ pa nariši.
+\naloga[\tocke{6}]
+  Funkciji $f(x)=\log_2{\left(x+2\right)}-1$ določi definicisko območje (računsko) in jo nariši. Nato funkciji $f(x)$ določi inverzno funkcijo $f^{-1}(x)$.
   \dodatek{\input{koordinatnisistem}}
 
 
-\naloga[\tocke{5}]
+\naloga[\tocke{4}]
   Reši enačbe:
   \podnaloga[\tocke{2}]
   \[2^x+2^{2x-1}=4\]
   \prostor[1]
 
-  \podnaloga[\tocke{2}]
+  \podnaloga[\tocke{4}]
   \[2^{x+1}+3^{x-1}=2^{x-1}+3^x\]
   \prostor[1]
 
-  \podnaloga[\tocke{2}]
+  \podnaloga[\tocke{4}]
   \[\log_2{\left(5-3x\right)}+\log_2{\left(9-x\right)}-4=0\]
   \prostor[1]
 
-\naloga*[\tocke{5}]
+\naloga*[\tocke{6}]
   Izračunaj $\log_9{8}\cdot\log_4{81}+\ln{\sqrt{e}}+\log_3{\frac{\sqrt{3}}{3}}-10^{\log{2}}$.
   \prostor[1]
-
-
-
 
 
 \end{document}
